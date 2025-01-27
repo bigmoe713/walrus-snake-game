@@ -1,18 +1,17 @@
-networks:
-  testnet:
-    package: "0x6f1a52c9c41893142022a1cd50d9cd36e886a696"
-    registry: "0x1f9310238ee9298fb703c3419030b35b22bb1cc7"
+portal: walrus.site
+package: "0xdf9033cac39b7a9b9f76fb6896c9fc5283ba730d6976a2b1d85ad1e6036c3272"
+general:
+  walrus_binary: walrus
+  gas_budget: 170000000
 
+name: "Probably Nothing"
+description: "An awesome walrus-themed snake game"
 site:
-  name: "the Probably Nothing Game"
-  description: "An awesome walrus-themed snake game"
-  routes:
-    "/": 
-      file: "index.html"
-      blob: "LVLk9VSnBrEgQ2HJHAgU3p8IarKypQpfn38aSeUZzzE"
-    "/Oi-Regular.ttf":
-      blob: "76npyqDyGF10-jP_ov-UBHpi-RaRFnxcWgslueGEfr0"
-    "/file.svg":
-      blob: "w70pYgtLmi--38Jg1sTGaLlZkQtximNMHXjxDQdXKa0"
-    "/walrus.svg":
-      blob: "866UDjMAy_BB8SsTcgjGEOFp2uAO9BbcVbLh5-_oBNE"
+  index: index.html
+  files:
+    - "**/*"
+  exclude:
+    - ".git/*"
+    - ".git/**/*"
+    - "node_modules/*"
+    - "node_modules/**/*"
